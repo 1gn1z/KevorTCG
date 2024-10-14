@@ -5,12 +5,20 @@ body {
 }
 
 .header {
-    background-color: #000; /* Negro */
-    padding: 15px 100px; /* Doblado el ancho */
+    background-color: #000; /* Fondo negro */
+    padding: 40px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre el logo y el menú */
+    align-items: center;
+    width: 100%; /* O ajustar según sea necesario */
+    max-width: 1200px; /* Para limitar el ancho máximo */
 }
 
 .header-logo img {
@@ -22,7 +30,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 40px; /* Espaciado entre elementos */
+    gap: 40px; /* Espaciado entre los elementos del menú */
 }
 
 .header-nav ul li {
@@ -30,17 +38,18 @@ body {
 }
 
 .header-nav ul li a {
-    color: #c0c0c0; /* Color de texto gris */
-    text-decoration: none;
+    color: #c0c0c0; /* Color del texto gris */
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
-    padding: 15px 20px;
+    text-decoration: none;
+    padding: 70px 20px;
     text-transform: uppercase;
     transition: all 0.3s ease;
     border-bottom: 2px solid transparent; /* Borde inferior para hover */
 }
 
 .header-nav ul li a:hover {
-    background-color: rgb(24, 23, 23); /* Negro más tenue al hover */
-    border-bottom: 2px solid #ffcc00; /* Borde dorado al hover */
-    border-radius: 5px;
+    background-color: #4e4e4ebd; /* Color de fondo al hacer hover */
+    border-bottom: 2px solid #ffcc00; /* Borde dorado al hacer hover */
+    border-radius: 10px;
 }
